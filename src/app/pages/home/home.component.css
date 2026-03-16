@@ -1,0 +1,131 @@
+.home-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef8f8, #f8fcff);
+  color: #1f2937;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 60px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #d9f3ef;
+  color: #216b68;
+  padding: 8px 14px;
+  border-radius: 20px;
+  margin-bottom: 18px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  margin: 0 0 20px;
+  color: #123c4a;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #4b5563;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 14px 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background-color: #2b7a78;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #215f5d;
+}
+
+.btn-secondary {
+  border: 2px solid #2b7a78;
+  color: #2b7a78;
+  background-color: transparent;
+}
+
+.btn-secondary:hover {
+  background-color: #e8f8f6;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 280px;
+}
+
+.image-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.image-card img {
+  width: 320px;
+  max-width: 100%;
+  display: block;
+}
+
+.services {
+  padding: 60px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 34px;
+  margin-bottom: 35px;
+  color: #123c4a;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.07);
+}
+
+.card h3 {
+  color: #2b7a78;
+  margin-bottom: 15px;
+}

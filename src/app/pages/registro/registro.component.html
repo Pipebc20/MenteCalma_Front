@@ -1,0 +1,64 @@
+<div class="auth-container">
+  <div class="auth-card">
+    <h2>Crear cuenta</h2>
+    <p class="subtitle">Regístrate y comienza tu experiencia en MenteCalma</p>
+
+    <form (ngSubmit)="registrarse()" #registroForm="ngForm">
+      <div class="form-group">
+        <label for="nombre">Nombre completo</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          [(ngModel)]="nombre"
+          placeholder="Ingresa tu nombre"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="correo">Correo electrónico</label>
+        <input
+          type="email"
+          id="correo"
+          name="correo"
+          [(ngModel)]="correo"
+          placeholder="Ingresa tu correo"
+          required
+          email
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="clave">Contraseña</label>
+        <input
+          type="password"
+          id="clave"
+          name="clave"
+          [(ngModel)]="clave"
+          placeholder="Crea una contraseña"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="confirmarClave">Confirmar contraseña</label>
+        <input
+          type="password"
+          id="confirmarClave"
+          name="confirmarClave"
+          [(ngModel)]="confirmarClave"
+          placeholder="Confirma tu contraseña"
+          required
+        />
+      </div>
+
+      <button type="submit" class="btn-auth">Registrarme</button>
+    </form>
+
+    <p class="link-text">
+      ¿Ya tienes cuenta?
+      <a href="/login">Inicia sesión aquí</a>
+    </p>
+  </div>
+</div>
